@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abroad Consultancy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Abroad Consultancy Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonals.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Abroad Consultancy</h2>
+        <p>Your journey to studying abroad starts here! We offer expert guidance and support for all your educational needs.</p>
+        <p><strong>Ready to take the next step?</strong></p>
+        <p>Explore our services to see how we can assist you in making your study abroad experience seamless and successful.</p>
+        <a href="services.html" class="cta-button">Learn More</a>
+    </section>
+
+    <section id="login-register">
+        <h2>Login or Register</h2>
+
+        <div class="form-container">
+            <form id="registerForm">
+                <h3>Register</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="regPassword" name="password" required>
+                
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                
+                <button type="submit">Register</button>
+                <div id="registerFeedback"></div>
+            </form>
+
+            <form id="loginForm" style="display: none;">
+                <h3>Login</h3>
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                
+                <button type="submit">Login</button>
+                <div id="loginFeedback"></div>
+            </form>
+        </div>
+        
+        <p id="toggleLogin">Already have an account? <a href="#" id="toggleForm">Login here</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Abroad Consultancy</p>
+    </footer>
+
+    <script src="practice.js"></script>
+</body>
+</html>
